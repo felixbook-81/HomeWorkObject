@@ -3,7 +3,7 @@ package lesson1;
 public class Main {
     public static void main(String[] args) {
         Author author1 = new Author("Лев", "Tолстой");
-        Author author2 = new Author("Алексндр", "Пушкин");
+        Author author2 = new Author("Александр", "Пушкин");
         Book book1 = new Book("Война и Мир", "1867");
         Book book2 = new Book("Онегин", "1833");
         System.out.println("Название книги = " + book1.getauthor());
