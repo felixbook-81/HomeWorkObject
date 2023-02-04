@@ -1,16 +1,16 @@
 package lesson1;
 
 public class Book {
-    String author;
+    String bookTitle;
     int publication;
 
     public Book(String author, int publication) {
-        this.author = author;
+        this.bookTitle = bookTitle;
         this.publication = publication;
     }
 
-    public String getauthor() {
-        return this.author;
+    public String getbookTitle() {
+        return this.bookTitle;
     }
 
     public int getPublication() {
@@ -22,4 +22,3 @@ public class Book {
         // Создали сеттер — метод, который меняет значение
         this.publication = publication;
     }
-}
