@@ -2,19 +2,24 @@ package lesson1;
 
 public class Main {
     public static void main(String[] args) {
+
         Author author1 = new Author("Лев", "Tолстой");
         Author author2 = new Author("Алексндр", "Пушкин");
-        Book book1 = new Book("Война и Мир", "1867");
-        Book book2 = new Book("Онегин", "1833");
-        System.out.println("Название книги = " + book1.getauthor());
-        System.out.println("Название книги = " + book2.getauthor());
-        System.out.println("Автор = " + author1.getName()+ " " + author1.getSurname());
-        System.out.println("Автор = " + author2.getName()+ " " + author2.getSurname());
-        System.out.println("Год Публикации = " + book1.getPublication());
-        System.out.println("Год Публикации = " + book2.getPublication());
 
-        book1.setPublication("1938");
-        // Вызываем сеттер
-        System.out.println("Год Публикации =  " + book1.getPublication());
+        Book bookName1 = new Book(author1, 1837, "Война и Мир");
+        Book bookName2 = new Book(author2, 1835, "Онегин");
+
+        System.out.println("Автор = " + author1.getName() + " " + author1.getSurname());
+        System.out.println("Автор = " + author2.getName() + " " + author2.getSurname());
+
+        System.out.println("Название книги = " + bookName1.getBookName());
+        System.out.println("Название книги = " + bookName2.getBookName());
+
+        System.out.println("Год Публикации = " + bookName1.getPublicationYear());
+        System.out.println("Год Публикации = " + bookName2.getPublicationYear());
+
+
+        bookName1.getPublicationYear();
+        System.out.println("Год Публикации =  " + bookName1.getPublicationYear());
     }
 }

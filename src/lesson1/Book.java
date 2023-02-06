@@ -1,25 +1,37 @@
 package lesson1;
 
 public class Book {
-    String author;
-    String publication;
+    private Author author;
+    private int publicationYear;
+    private String bookName;
 
-    public Book(String author, String publication) {
+    public Book(Author author, int publicationYear, String bookName) {
+
         this.author = author;
-        this.publication = publication;
+        this.publicationYear = publicationYear;
+        this.bookName = bookName;
     }
 
-    public String getauthor() {
+    public Author getAuthor() {
         return this.author;
     }
 
-    public String getPublication() {
-        return this.publication;
+    public int getPublicationYear() {
+        return this.publicationYear;
 
     }
 
-    public void setPublication(String publication) {
-        // Создали сеттер — метод, который меняет значение
-        this.publication = publication;
+    public void setPublicationYear(int publicationYear) {     // Создали сеттер — метод, который меняет значение
+        this.publicationYear = publicationYear;
+
     }
+
+    public String getBookName() {
+        return this.bookName;
+    }
+
 }
+
+
+
+
