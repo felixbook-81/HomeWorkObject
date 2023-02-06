@@ -20,7 +20,7 @@ public class Main {
         System.out.println("Год Публикации = " + bookName2.getPublicationYear());
 
 
-        bookName1.getPublicationYear();
+        bookName1.setPublicationYear(1645);
         System.out.println("Год Публикации =  " + bookName1.getPublicationYear());
 
     }
