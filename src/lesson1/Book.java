@@ -1,6 +1,7 @@
 package lesson1;
 
 public class Book {
+
     private Author author;
     private int publicationYear;
     private String bookName;
@@ -31,7 +32,5 @@ public class Book {
     }
 
 }
-
-
 
 

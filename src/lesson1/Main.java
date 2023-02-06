@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         Author author1 = new Author("Лев", "Tолстой");
+
         Author author2 = new Author("Алексндр", "Пушкин");
 
         Book bookName1 = new Book(author1, 1837, "Война и Мир");
@@ -21,5 +22,6 @@ public class Main {
 
         bookName1.getPublicationYear();
         System.out.println("Год Публикации =  " + bookName1.getPublicationYear());
+
     }
 }
